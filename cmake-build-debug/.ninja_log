@@ -1,0 +1,6 @@
+# ninja log v6
+1	35	1739417333984543412	CMakeFiles/cfeeny.dir/src/cfeeny.c.o	b776cee9a5e89c59
+3	37	1739417333986543404	CMakeFiles/cfeeny.dir/src/interpreter.c.o	c7ac8d8c087ee9a2
+35	102	1739417334018543285	CMakeFiles/cfeeny.dir/src/utils.c.o	755285c99c1bcf53
+2	143	1739417333985543408	CMakeFiles/cfeeny.dir/src/ast.c.o	5e0cb3f141b9f291
+143	164	1739417334126542881	cfeeny	3440b7a0950325bf

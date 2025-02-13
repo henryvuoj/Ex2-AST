@@ -1,0 +1,3 @@
+/home/sgvn/CLionProjects/Ex2-AST/cmake-build-debug/CMakeFiles/cfeeny.dir
+/home/sgvn/CLionProjects/Ex2-AST/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/sgvn/CLionProjects/Ex2-AST/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,48 @@
+
+
+
+defn bshelper (xs, i, n, v) :
+   if n == 1 :
+      if xs[i] == v : i
+      else : -1
+   else :
+      var n1 = n / 2
+      var a = xs[i + n1 - 1]
+      if a < v : bshelper(xs, i + n1, n - n1, v)
+      else : bshelper(xs, i, n1, v)
+
+defn bs (xs, v) :
+   if xs.length() == 0 : -1
+   else : bshelper(xs, 0, xs.length(), v)
+
+
+var abc = array(10, 0)
+abc[0] = 4
+abc[1] = 6
+abc[2] = 9
+abc[3] = 13
+abc[4] = 15
+abc[5] = 17
+abc[6] = 18
+abc[7] = 24
+abc[8] = 29
+abc[9] = 35
+
+defn find (v) :
+   printf("The index of ~ in abc is ~.\n", v, bs(abc, v))
+
+find(13)
+find(14)
+find(15)
+find(29)
+find(30)
+
+
+;============================================================
+;====================== OUTPUT ==============================
+;============================================================
+;The index of 13 in a is 3.
+;The index of 14 in a is -1.
+;The index of 15 in a is 4.
+;The index of 29 in a is 8.
+;The index of 30 in a is -1.
