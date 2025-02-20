@@ -1,9 +1,13 @@
 //
 // Created by sgvn on 20/02/2025.
 //
+#include "../interpreter.h"
+#include "hashmap.h"
+
+#include <stdlib.h>
 
 int compute(Obj* obj, Hashmap* hashmap) {
-    int map_key = obj
+    return (int)(obj->timestamp / hashmap->size);
 }
 
 Hashmap* make_hashmap(int size) {
@@ -16,3 +20,11 @@ Hashmap* make_hashmap(int size) {
     return hm;
 }
 
+Obj* put(Hashmap* hashmap, Obj* key, Obj* value) {
+    int idx = compute(key, hashmap);
+    array_set(
+        hashmap->array,
+        make_int_obj(idx),
+        value
+    );
+}

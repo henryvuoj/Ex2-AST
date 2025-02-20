@@ -5,10 +5,6 @@
 #ifndef HASHMAP_H
 #define HASHMAP_H
 
-#include <stdlib.h>
-
-#include "../interpreter.h"
-
 typedef struct {
     int size;
     ArrayObj* array;
