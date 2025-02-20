@@ -11,5 +11,7 @@ add_executable(cfeeny
         src/cfeeny.c
         src/ast.c
         src/interpreter.c
-        src/utils.c  # Add the source file where print_string is defined
+        src/utils.c
+        src/lib/hashmap.h
+        src/lib/hashmap.c  # Add the source file where print_string is defined
 )

@@ -77,6 +77,13 @@ build CMakeFiles/cfeeny.dir/src/utils.c.o: C_COMPILER__cfeeny_unscanned_Debug /h
   OBJECT_DIR = CMakeFiles/cfeeny.dir
   OBJECT_FILE_DIR = CMakeFiles/cfeeny.dir/src
 
+build CMakeFiles/cfeeny.dir/src/lib/hashmap.c.o: C_COMPILER__cfeeny_unscanned_Debug /home/sgvn/CLionProjects/Ex2-AST/src/lib/hashmap.c || cmake_object_order_depends_target_cfeeny
+  DEP_FILE = CMakeFiles/cfeeny.dir/src/lib/hashmap.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -I/home/sgvn/CLionProjects/Ex2-AST/src
+  OBJECT_DIR = CMakeFiles/cfeeny.dir
+  OBJECT_FILE_DIR = CMakeFiles/cfeeny.dir/src/lib
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target cfeeny
@@ -85,7 +92,7 @@ build CMakeFiles/cfeeny.dir/src/utils.c.o: C_COMPILER__cfeeny_unscanned_Debug /h
 #############################################
 # Link the executable cfeeny
 
-build cfeeny: C_EXECUTABLE_LINKER__cfeeny_Debug CMakeFiles/cfeeny.dir/src/cfeeny.c.o CMakeFiles/cfeeny.dir/src/ast.c.o CMakeFiles/cfeeny.dir/src/interpreter.c.o CMakeFiles/cfeeny.dir/src/utils.c.o
+build cfeeny: C_EXECUTABLE_LINKER__cfeeny_Debug CMakeFiles/cfeeny.dir/src/cfeeny.c.o CMakeFiles/cfeeny.dir/src/ast.c.o CMakeFiles/cfeeny.dir/src/interpreter.c.o CMakeFiles/cfeeny.dir/src/utils.c.o CMakeFiles/cfeeny.dir/src/lib/hashmap.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/cfeeny.dir
   POST_BUILD = :
