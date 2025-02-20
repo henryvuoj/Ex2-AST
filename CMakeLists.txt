@@ -13,5 +13,18 @@ add_executable(cfeeny
         src/interpreter.c
         src/utils.c
         src/lib/hashmap.h
-        src/lib/hashmap.c  # Add the source file where print_string is defined
+        src/lib/hashmap.c
+)
+
+# Create a separate test executable
+add_executable(test_hashmap
+        src/lib/test_hashmap.c
+        src/ast.c
+        src/ast.h
+        src/interpreter.c
+        src/interpreter.h
+        src/utils.c
+        src/utils.h
+        src/lib/hashmap.h
+        src/lib/hashmap.c
 )

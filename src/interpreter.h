@@ -2,6 +2,7 @@
 #define INTERPRETER_H
 
 #include "ast.h"
+#include <stdint.h>
 
 typedef enum {
     OBJ_NULL,
@@ -43,15 +44,15 @@ Obj* make_null_obj();
 
 //Int object
 IntObj* make_int_obj(int value);
-IntObj* add(IntObj* x, IntObj *y);
-IntObj* sub(IntObj* x, IntObj *y);
-IntObj* mul(IntObj* x, IntObj *y);
-IntObj* div(IntObj* x, IntObj *y);
-Obj* lt(IntObj* x, IntObj *y);
-Obj* lte(IntObj* x, IntObj *y);
-Obj* gt(IntObj* x, IntObj *y);
-Obj* gte(IntObj* x, IntObj *y);
-Obj* eql(IntObj* x, IntObj *y);
+IntObj* int_add(IntObj* x, IntObj *y);
+IntObj* int_sub(IntObj* x, IntObj *y);
+IntObj* int_mul(IntObj* x, IntObj *y);
+IntObj* int_div(IntObj* x, IntObj *y);
+Obj* int_lt(IntObj* x, IntObj *y);
+Obj* int_lte(IntObj* x, IntObj *y);
+Obj* int_gt(IntObj* x, IntObj *y);
+Obj* int_gte(IntObj* x, IntObj *y);
+Obj* int_eql(IntObj* x, IntObj *y);
 //Int object
 
 //Array object

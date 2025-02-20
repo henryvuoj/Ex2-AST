@@ -29,47 +29,47 @@ IntObj* make_int_obj(int value) {
   obj->timestamp = (int64_t)time(NULL);
   return obj;
 }
-IntObj* add(IntObj* x, IntObj *y) {
+IntObj* int_add(IntObj* x, IntObj *y) {
   return make_int_obj(x->value + y->value);
 }
-IntObj* sub(IntObj* x, IntObj *y) {
+IntObj* int_sub(IntObj* x, IntObj *y) {
   return make_int_obj(x->value - y->value);
 }
-IntObj* mul(IntObj* x, IntObj *y) {
+IntObj* int_mul(IntObj* x, IntObj *y) {
   return make_int_obj(x->value * y->value);
 }
-IntObj* div(IntObj* x, IntObj *y) {
+IntObj* int_div(IntObj* x, IntObj *y) {
   return make_int_obj(x->value / y->value);
 }
-Obj* lt(IntObj* x, IntObj *y) {
+Obj* int_lt(IntObj* x, IntObj *y) {
   if (x->value < y->value) {
     return make_int_obj(0);
   } else {
     return make_null_obj();
   }
 }
-Obj* lte(IntObj* x, IntObj *y) {
+Obj* int_lte(IntObj* x, IntObj *y) {
   if (x->value <= y->value) {
     return make_int_obj(0);
   } else {
     return make_null_obj();
   }
 }
-Obj* gt(IntObj* x, IntObj *y) {
+Obj* int_gt(IntObj* x, IntObj *y) {
   if (x->value < y->value) {
     return make_int_obj(0);
   } else {
     return make_null_obj();
   }
 }
-Obj* gte(IntObj* x, IntObj *y) {
+Obj* int_gte(IntObj* x, IntObj *y) {
   if (x->value <= y->value) {
     return make_int_obj(0);
   } else {
     return make_null_obj();
   }
 }
-Obj* eql(IntObj* x, IntObj *y) {
+Obj* int_eql(IntObj* x, IntObj *y) {
   if (x->value == y->value) {
     return make_int_obj(0);
   } else {

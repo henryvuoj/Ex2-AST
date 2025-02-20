@@ -11,9 +11,8 @@ typedef struct {
 } Hashmap;
 
 Hashmap* make_hashmap(int size);
-Obj* put(Obj* key, Obj* value);
-NullObj* remove(Obj* key);
-Obj* contain_key(Obj* key);
-Obj* contain_value(Obj* value);
+Obj* hashmap_put(Hashmap* hashmap, Obj* key, Obj* value);
+Obj* hashmap_get(Hashmap* hashmap, Obj* key);
+Obj* hashmap_remove(Hashmap* hashmap, Obj* key);
 
 #endif //HASHMAP_H
