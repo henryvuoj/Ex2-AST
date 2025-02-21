@@ -12,19 +12,35 @@ add_executable(cfeeny
         src/ast.c
         src/interpreter.c
         src/utils.c
-        src/lib/hashmap.h
-        src/lib/hashmap.c
+        src/lib/hashmap/hashmap.h
+        src/lib/hashmap/hashmap.c
+        src/lib/object/object.c
+        src/lib/object/object.h
+        src/lib/object/int_object.c
+        src/lib/object/int_object.h
+        src/lib/object/null_object.c
+        src/lib/object/null_object.h
+        src/lib/object/array_object.c
+        src/lib/object/array_object.h
 )
 
 # Create a separate test executable
 add_executable(test_hashmap
-        src/lib/test_hashmap.c
+        src/lib/hashmap/test_hashmap.c
         src/ast.c
         src/ast.h
         src/interpreter.c
         src/interpreter.h
         src/utils.c
         src/utils.h
-        src/lib/hashmap.h
-        src/lib/hashmap.c
+        src/lib/hashmap/hashmap.h
+        src/lib/hashmap/hashmap.c
+        src/lib/object/object.c
+        src/lib/object/object.h
+        src/lib/object/int_object.c
+        src/lib/object/int_object.h
+        src/lib/object/null_object.c
+        src/lib/object/null_object.h
+        src/lib/object/array_object.c
+        src/lib/object/array_object.h
 )

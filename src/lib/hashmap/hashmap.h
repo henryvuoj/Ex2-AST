@@ -5,6 +5,8 @@
 #ifndef HASHMAP_H
 #define HASHMAP_H
 
+#include "lib/object/array_object.h"
+
 typedef struct {
     int size;
     ArrayObj* array;
