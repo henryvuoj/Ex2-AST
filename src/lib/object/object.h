@@ -14,6 +14,7 @@
 typedef enum {
     OBJ_NULL,
     OBJ_INT,
+    OBJ_STRING,
     OBJ_ARRAY,
     OBJ_ENV
 } ObjType;
