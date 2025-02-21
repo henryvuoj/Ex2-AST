@@ -12,6 +12,6 @@ typedef struct {
     int64_t hash_value;
 } StringObj;
 
-StringObj* make_string_obj(const char* value);
+StringObj* make_string_obj(char* value);
 
 #endif //STRING_OBJECT_H

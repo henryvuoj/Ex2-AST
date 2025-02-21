@@ -20,4 +20,5 @@ StringObj* make_string_obj(char* value) {
     obj->type = OBJ_STRING;
     obj->value = value;
     obj->hash_value = compute_hash_value(value);
+    return obj;
 }
