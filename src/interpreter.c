@@ -67,7 +67,12 @@ Obj* eval_stmt(EnvObj* genv, EnvObj* env, ScopeStmt* stmt) {
             ScopeExp* stmt_exp = (ScopeExp*)stmt;
             return eval_exp(genv, env, stmt_exp->exp);
         }
-
+        case SEQ_STMT:{
+            ScopeSeq* s2 = (ScopeSeq*)stmt;
+            exec_stmt(genv, env, s2->a);
+            exec_stmt(genv, env, s2->b);
+            break;
+        }
         default:
             printf("Error: Unknown statement type %d\n", stmt->tag);
         exit(-1);
